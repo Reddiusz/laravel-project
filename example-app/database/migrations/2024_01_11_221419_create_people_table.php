@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('surname');
-            $table->integer('phone_num');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('phone_num');
             $table->string('street');
             $table->string('city');
             $table->timestamps();
